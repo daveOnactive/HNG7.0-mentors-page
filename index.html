@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/Mentors.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Mentors Page</title>
     <style>
       * {
@@ -76,21 +77,6 @@ text-align: center;
 color: #084482;
 }
 
-p {
-position: absolute;
-width: 784px;
-height: 99px;
-left: 328px;
-top: 371px;
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 33px;
-text-align: center;
-color: #474747;
-}
-
     .image {
       border-radius: 50%;
       width: 170px;
@@ -149,6 +135,39 @@ color: #474747;
       background: #11CDEF;
     }
 
+    .fourth-color {
+      background: rgb(98, 255, 98);
+    }
+     #landing-page {
+      text-align: center;
+      height: 60vh;
+      background-color: #D1F0F6;
+
+     }
+
+     #nav {
+      background-color: #D1F0F6 !important;
+      color: #474747 !important;
+      font-weight: bold;
+     }
+
+     #landing-page h2 {
+       margin-top: 5rem;
+       font-weight: bold;
+       color: #084482 !important;
+     }
+
+     #landing-page p {
+       margin-top: 1rem;
+     }
+
+     #img {
+       margin-left: 1rem !important;
+       width: 150px;
+     }
+
+
+
     @media (min-width: 640px) {
       .wrapper {
         display: grid;
@@ -159,34 +178,79 @@ color: #474747;
     @media (min-width: 740px) {
       .wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
       }
+
+      li {
+        padding: 0 1.5rem;
+      }
+
+      ul {
+        margin-right: 3rem;
+      }
+
+      .collapse {
+      display: flex;
+      justify-content:flex-end;
+      }
+
+      #img {
+       margin-left: 4rem !important;
+       width: 200px;
+       box-shadow: 0px 4px 4px rgba(50, 50, 93, 0.11), 0px 1px 3px rgba(0, 0, 0, 0.08);
+     }
+
     }
+
+    
 
 </style>
 </head>
 <body>
-  <header>
-<div class="ompnavbar">
-  <img class="logo" src="images/brand-logo.png">
-<nav>
-  <a class="mxbox" href="#">Join HNG</a> 
-<a href="#">Contact</a> 
-<a href="#">Mentors</a>  
-<a href="#">HNG6</a>  
-  <a href="#">Home</a>  
-  <div class="omp">Our Mentors</div>
-</nav>
-  <p>Our mentors who are experienced in various sector contributes their
-     time and knowledge in making sure the interns get the best guide as 
-     they begin their journey into the tech industry</p>
-</div>
-</header>
-    
-    <div class="landing-page"></div>
-  </header>
+    <header>
+  <!-- <div class="ompnavbar">
+    <img class="logo" src="images/brand-logo.png">
+  <nav>
+    <a class="mxbox" href="#">Join HNG</a> 
+  <a href="#">Contact</a> 
+  <a href="#">Mentors</a>  
+  <a href="#">HNG6</a>  
+    <a href="#">Home</a>  
+    <div class="omp">Our Mentors</div>
+  </nav> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+    <a class="navbar-brand" href="#">
+      <img src="/brand-logo.svg" id="img">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">HNG6</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mentors<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
 
-  
+        <button class="btn btn-primary">Join HNG</button>
+      </ul>
+    </div>
+  </nav>
+  </header>
+  <div class="jumbotron" id="landing-page">
+      <h2>Our Mentors</h2>
+      <p class="lead">Our mentors who are experienced in various sector contributes their
+          time and knowledge in making sure the interns get the best guide as 
+        they begin their journey into the tech industry</p>
+  </div>
   <main>
     <section class="mentors-section">
       <div class="wrapper">
@@ -198,7 +262,9 @@ color: #474747;
 
   
   <footer></footer>
-  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
  <script>
   const wrapper = document.querySelector('.wrapper');
 wrapper.classList.add('wrapper');
@@ -257,11 +323,11 @@ const displayMentors = (data) => {
     socialIcons.appendChild(spanThree);
 
 
-    if(count <= 0 || count === 3) {
+    if(count <= 0 || count === 4) {
       spanOne.classList.add('first-color');
       spanTwo.classList.add('first-color');
       spanThree.classList.add('first-color');
-      if(count === 3) {
+      if(count === 4) {
         count = 0;
       }
     } else if(count > 0 && count <= 1) {
@@ -272,6 +338,10 @@ const displayMentors = (data) => {
       spanOne.classList.add('third-color');
       spanTwo.classList.add('third-color');
       spanThree.classList.add('third-color');
+    } else if(count > 2 && count <= 3) {
+      spanOne.classList.add('fourth-color');
+      spanTwo.classList.add('fourth-color');
+      spanThree.classList.add('fourth-color');
     }
 
     wrapperChild.appendChild(image);

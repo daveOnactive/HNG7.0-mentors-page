@@ -23,60 +23,6 @@
       text-decoration: none;
     }
 
-    .ompnavbar {
-  position: absolute;
-  overflow: hidden;
-  background-color: #D1F0F6;
-  width: 100%;
-  height: 530px;
-  left: 0px;
-  top: 0px;
-}
-
-.logo {
-position: absolute;
-width: 281px;
-height: 56.43px;
-left: 164px;
-top: 24px;
-    }
-
-.ompnavbar a {
-  float: right;
-  color: #474747;
-  padding: 38px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  
-}
-.ompnavbar a.mxbox {
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-padding: 12px 18px 12px 18px;
-color: #fff;
-background: #00AEFF;
-border-radius: 4px;
-margin-top:29px;
-margin-right: 166px;
-}
-
-.omp {
-position: absolute;
-width: 247px;
-height: 54px;
-left: 596px;
-top: 278px;
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-line-height: 54px;
-text-align: center;
-color: #084482;
-}
-
     .image {
       border-radius: 50%;
       width: 170px;
@@ -140,7 +86,7 @@ color: #084482;
     }
      #landing-page {
       text-align: center;
-      height: 60vh;
+      height: 50vh;
       background-color: #D1F0F6;
 
      }
@@ -164,6 +110,72 @@ color: #084482;
      #img {
        margin-left: 1rem !important;
        width: 150px;
+     }
+     
+     footer {
+         text-align: center;
+     }
+     
+     .footer-brand {
+         margin-top: 2rem;
+     }
+     
+     #sections {
+         margin-top: 2rem;
+     }
+     
+     .blue{
+         color: #3BB9FF;
+     }
+     
+     footer h4 {
+         color: #3BB9FF;
+     }
+     
+     
+     .btn {
+         Background: #3BB9FF !important;
+         Border: #3Bb9ff !important;
+     }
+     ul {
+         list-style: none;
+     }
+     
+     #section-one,
+     #section-two,
+     #section-three,
+     #section-four {
+         margin: 3rem 0;
+     }
+     
+     h4 {
+         font-weight: bold;
+     }
+     
+     .bottom-icons span {
+         background:#3BB9FF;
+     }
+     
+     p#bottom {
+         margin-top: 5rem;
+     }
+     
+     #footer {
+         background: none !important;
+     }
+     
+     footer {
+         background: #F8F8F8;
+         box-sizing: border-box;
+     }
+     
+     footer p,
+     footer h3 {
+         color: #474747;
+     }
+     
+     footer a {
+         color: #3BB9FF;
      }
 
 
@@ -197,7 +209,40 @@ color: #084482;
       #img {
        margin-left: 4rem !important;
        width: 200px;
-       box-shadow: 0px 4px 4px rgba(50, 50, 93, 0.11), 0px 1px 3px rgba(0, 0, 0, 0.08);
+     }
+     
+     #landing-page {
+         height: 80vh;
+     }
+     
+     .land {
+         margin: 0 auto;
+         width: 650px !important;
+     }
+     
+     footer {
+         text-align: left;
+     }
+     
+     .footer-brand {
+         margin-left: -2.2rem;
+     }
+     
+     #sections {
+         display: flex;
+         justify-content: space-evenly;
+         text-align: left;
+     }
+     
+     #bottom {
+         text-align: center;
+     }
+     
+     #section-one,
+     #section-two,
+     #section-three,
+     #section-four {
+         padding: 0 1rem;
      }
 
     }
@@ -208,33 +253,23 @@ color: #084482;
 </head>
 <body>
     <header>
-  <!-- <div class="ompnavbar">
-    <img class="logo" src="images/brand-logo.png">
-  <nav>
-    <a class="mxbox" href="#">Join HNG</a> 
-  <a href="#">Contact</a> 
-  <a href="#">Mentors</a>  
-  <a href="#">HNG6</a>  
-    <a href="#">Home</a>  
-    <div class="omp">Our Mentors</div>
-  </nav> -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
     <a class="navbar-brand" href="#">
-      <img src="/brand-logo.svg" id="img">
+      <img src="https://res.cloudinary.com/chidi6ix/image/upload/v1570716504/brand-logo_cmbyi8.svg" id="img">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">HNG6</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Mentors<span class="sr-only">(current)</span></a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Mentors</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -246,10 +281,13 @@ color: #084482;
   </nav>
   </header>
   <div class="jumbotron" id="landing-page">
+      <div class="land">
       <h2>Our Mentors</h2>
       <p class="lead">Our mentors who are experienced in various sector contributes their
           time and knowledge in making sure the interns get the best guide as 
         they begin their journey into the tech industry</p>
+      </div>
+
   </div>
   <main>
     <section class="mentors-section">
@@ -261,7 +299,69 @@ color: #084482;
 
 
   
-  <footer></footer>
+  <footer>
+      <div class="jumbotron" id="footer">
+          <div class="footer-brand">
+              <img src="https://res.cloudinary.com/chidi6ix/image/upload/v1570716504/brand-logo_cmbyi8.svg" id="img">
+          </div>
+          <div id="sections">
+          <section id="section-one">
+              <h4 class="blue">Quick Links</h4>
+              <br>
+              <ul class="blue" class="ul">
+                 <li>
+                     <a href="#">Join HNG</a>
+                 </li>
+                 <li>
+                     <a href="#">About HNG</a>
+                 </li>
+                 <li>
+                     <a href="#">Become a Sponsor</a>
+                 </li>
+                 <li>
+                     <a href="#">Signup as a Mentor</a>
+                 </li>
+              </ul>
+          </section>
+          <section id="section-two">
+              <h4>Contact Us</h4>
+              <br>
+              <h3>Phone</h3>
+              <p>+234 (0) 812 345 6789</p>
+              <h3>Email</h3>
+              <p>interns@hng.tech</p>
+          </section>
+          <section id="section-three">
+              <h4>Office Address</h4>
+              <br>
+              <p>3 Birrel Avenue</p>
+              <p>Sabo Yab,</p>
+              <p>Lagos State</p>
+          </section>
+          <section id="section-four">
+              <h4>Follow Us</h4>
+              <br>
+              <div class="bottom-icons">
+                  <span>
+                      <i class="fab fa-twitter"></i>
+                  </span>
+                  
+                  <span>
+                      <i class="fab fa-facebook"></i>
+                  </span>
+                  
+                  <span>
+                      <i class="fab fa-dribbble"></i>
+                  </span>
+              </div>
+          </section>
+          </div>
+
+          <p id="bottom">
+              &copy; 2019, HNG Internship All rights reserved.
+          </p>
+      </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
